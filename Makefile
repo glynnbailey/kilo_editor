@@ -18,7 +18,7 @@ run: $(EXEC)
 	./$(EXEC)
 
 fmt:
-	clang-format -i $(SRCS)
+	clang-format -style=LLVM -i $(SRCS)
 
 clean:
 	rm -rf $(OBJ_DIR) $(EXEC)
